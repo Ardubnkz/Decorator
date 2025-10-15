@@ -33,7 +33,7 @@
             }
         }
         #endregion
-        #region Abstract Decorator
+        #region ABSTRACT CLASS
         abstract class DecoratorBevanda : IBeveranda
         {
             protected IBeveranda bevanda;
@@ -103,7 +103,7 @@
             Console.WriteLine(Caffe2.descrizione());
             Console.WriteLine(Caffe2.costo());
             Caffe2 = new ConCioccolato(Caffe2);
-            Console.WriteLine(Caffe2.descrizione() + "- costo: " + Caffe2.costo());
+            Console.WriteLine(Caffe2.descrizione() + " - Costo: " + Caffe2.costo());
         }
         #endregion
     }
