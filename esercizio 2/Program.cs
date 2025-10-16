@@ -89,12 +89,13 @@
         }
     }
     #endregion
+    #region PROGRAM
     internal class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("scegli il tipo(cioccolato, vaniglia, frutta): ");
-            string tipo = Console.ReadLine().ToLower();
+            string tipo = Console.ReadLine().ToLower().Trim();
             ITorta torta = TortaFactory.CreaTorta(tipo);
             if (torta == null)
             {
@@ -128,4 +129,5 @@
 
         }
     }
+    #endregion
 }
